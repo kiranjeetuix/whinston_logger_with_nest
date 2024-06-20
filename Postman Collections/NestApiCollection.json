@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "bfb45297-0580-4256-bcf4-ea33e876076f",
+		"name": "LogIn_Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Working?",
+			"id": "0df1bc97-ee00-403a-a568-9cc5d9e2acdd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/"
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"id": "0162579d-345b-4c13-a796-e399de96b6ee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Kiranjeet Kaur\",\n      \"username\": \"kiranjeetuix\",\n      \"email\": \"kiranjeet@uixlabs.in\",\n      \"password\": \"kiranjeet123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"id": "93876c7b-e8d8-4cce-9214-0ee574f64a04",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"username\": \"kiranjeetuix\",\n      \"password\": \"kiranjeet123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"id": "5fbf77ba-f05c-4112-ad2d-afcf9d8e3a59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users/"
+			},
+			"response": []
+		}
+	]
+}
